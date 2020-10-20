@@ -1,0 +1,542 @@
+/* CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+.ready-button {
+    color: black;
+    background: white;
+    transition: .4s;
+    border-radius: 8px;
+}
+.ready-button:hover {
+    color: white;
+    background: #6278DF;
+}
+
+/* Header CSS */
+.header {
+    background: white;
+    border-bottom: 1px solid wheat;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+}
+.header-left {
+    width: 27%;
+}
+.header-center {
+    width: 40%;
+}
+.header-right {
+    width: 33%;
+}
+
+
+.logo img {
+    width: 46px;
+    float: left;
+    margin-right: 12px;
+    margin-left: 20px;
+}
+.logo span {
+    font-size: 25px;
+    line-height: 50px;
+    color: black;
+    font-weight: 500;
+}
+
+
+.header-menu ul li {
+    display: inline-block;
+}
+.header-menu ul li a {
+    color: black;
+    padding: 0 18px;
+    font-size: 17px;
+    line-height: 50px;
+}
+.header-menu ul li a:hover {
+    color: #6278DF;
+}
+
+.header-button {
+    border: 2px solid #6278DF;
+    color: #6278DF;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 10px 30px;
+    margin-right: 40px;
+    transition: .4s;
+}
+.header-button:hover {
+    background-color: #6278DF;
+    color: white;
+}
+
+/* DropDown Menu CSS */
+.header-menu ul li {
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    left: 20px;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+    
+}
+.header-menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.header-menu ul li ul li {
+    width: 240px;
+    background: white;
+}
+.header-menu ul li ul li a {
+    display: inline-block;
+    padding: 5px 30px;
+}
+
+/* Banner CSS */
+.banner {
+    background: url(https://i.ibb.co/FDdkK2L/mbr-4.jpg) center;
+    background-size: cover;
+    padding: 154px 0;
+    color: white;
+    position: relative;
+    z-index: 3;
+    margin-top: 60px;
+}
+.banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: -1;
+}
+.banner h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+.banner h2 {
+    font-size: 60px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+}
+.banner a {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #7D7D7D;
+    padding: 20px 35px;
+    font-weight: 600;
+    margin: 6px 12px;
+}
+
+/* Video CSS */
+.video {
+    background: #f7f9ff;
+    padding: 80px 0;
+}
+.video-youtube {
+    width: 48%;
+
+}
+.video-content {
+    width: 48%;
+}
+.video-content h3 {
+    font-size: 45px;
+    font-weight: 400;
+}
+.video-content p {
+    font-size: 19px;
+    font-weight: 300;
+    padding: 32px 0;
+    line-height: 1.7em;
+}
+
+/* About CSS */
+.about {
+    padding: 90px 0;
+}
+.about-title h2 {
+    font-size: 58px;
+}
+.about-title p {
+    font-size: 25.6px;
+    padding: 24px 0px 48px;
+    opacity: .6;
+}
+
+.about-block {
+    margin-top: 60px;
+}
+
+.about-box {
+    max-width: 32%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+    padding: 48px 32px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: .4s;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+}
+.about-box:nth-child(3n+3) {
+    margin-right: 0;
+}
+.about-box:hover {
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .2);
+}
+.a-icon {
+    float: left;
+    width: 50px;
+    height: 145px;
+    font-size: 46px;
+    padding-right: 20px;
+    color: #6278DF;
+}
+.a-content h3 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.a-content p {
+    font-size: 20px;
+    padding-top: 24px;
+    font-weight: 300;
+}
+
+/* Pricing CSS */
+.pricing {
+    background: #f7f9ff;
+    padding: 50px;
+}
+.pricing-title h2 {
+    font-size: 58px;
+    font-weight: 500;
+}
+.pricing-title p {
+    font-size: 25.6px;
+    padding: 25px 0 80px;
+    font-weight: 300;
+}
+
+.pricing-box {
+    max-width: 32%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: .4s;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+}
+.pricing-box:nth-child(3) {
+    margin-right: 0;
+}
+
+.p-title {
+    border-radius: 4px 4px 0 0;
+    padding: 30px;
+    border-bottom: .5px solid #ddd;
+}
+.p-title h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.p-title h2 {
+    font-size: 57px;
+    font-weight: 800;
+    padding: 40px 0 20px;
+}
+.p-title span {
+    font-size: 21px;
+}
+.p-title h5 {
+    font-size: 21px;
+    font-weight: 400;
+    padding-top: 32px;
+}
+.p-title p {
+    font-size: 21px;
+    font-weight: 300;
+    padding: 16px 0 8px;
+}
+
+.p-content {
+    background: white;
+    padding: 30px;
+}
+.p-content ul li {
+    display: block !important;
+    padding: 20px 0;
+    font-size: 21px;
+    font-weight: 300;
+}
+.p-content span {
+    font-size: 30px;
+    color: #6278DF;
+    width: 40px;
+    display: inline-block;
+}
+
+.p-button {
+    text-align: center;
+    margin: 30px 0 30px;
+}
+.p-button .ready-button {
+    color: #6278DF;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 15px 30px;
+    width: 80%;
+    transition: .4s;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+    text-align: center;
+    font-weight: 800;
+    margin: auto;
+    font-size: 21px;
+}
+.p-button .ready-button:hover {
+    color: white;
+}
+
+/* Team CSS */
+.team {
+    padding-top: 70px;
+}
+.team-title h2 {
+    font-size: 45px;
+    padding: 16px 0 48px;
+    font-weight: 500;
+}
+.team-member {
+    width: 23%;
+    margin-right: 2%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+}
+.team-member:nth-child(5) {
+    margin-bottom: 70px;
+}
+.team-member:hover {
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .2);
+}
+.member-img img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.member-bio {
+    padding: 32px 16px;
+}
+.member-bio h3 {
+    font-size: 25.6px;
+    font-weight: 400;
+}
+.member-bio h4 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* Newslatter CSS */
+.newslatter {
+    background: white;
+}
+.newslatter p {
+    padding: 40px 0;
+}
+.newslatter h2 {
+    padding-bottom: 50px;
+}
+.newslatter-form {
+    margin-bottom: 90px;
+}
+.ready-input {
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+    width: 300px;
+    padding: 20px 15px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.ready-input:focus {
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5); 
+    border: 1px solid #6278df;
+}
+.submit-button {
+    color: white;
+    background: #6278DF;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+    padding: 20px 90px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: .4s;
+    border: none;
+    display: inline-block;
+    margin-left: 20px;
+    border: 2px solid transparent;
+}
+.submit-button:hover {
+    color: #6278DF;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .2);
+    border: 2px solid #6278DF;
+}
+
+/* Blog CSS */
+.blog {
+    padding: 100px 0;
+}
+.blog-title {
+    padding: 0 0 50px;
+}
+.blog-title-head {
+    width: 49%;
+    margin-top: 18px;
+}
+.blog-title-para {
+    width: 49%;
+    line-height: 2em;
+}
+.blog-title-head h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+.blog-title-para p {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.blog-post {
+    width: 49%;
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .1);
+    border-radius: 4px;
+}
+.blog-post:hover {
+    box-shadow: 2px 4px 28px 0 rgba(0, 0, 0, .2);
+}
+
+.blog-post img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+    border-radius: 4px 0 0 4px;
+}
+.blog-post-content {
+    padding: 40px 32px;
+}
+.blog-post-content h4 {
+    font-size: 21px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.blog-post-content p {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* Contact CSS */
+.contact {
+    background: #f7f9ff;
+    padding: 100px 0;
+}
+.contact-map {
+    width: 49%;
+}
+.contact-map iframe {
+    border-radius: 4px;
+}
+
+.contact-form {
+    width: 48%;
+}
+.w49 {width: 49%;}
+.w100 {width: 100%; margin-left: 0;}
+
+.contact-form h3 {
+    font-size: 25.6px;
+    font-weight: 500;
+    margin: 40px 0 20px;
+}
+.contact-form h4 {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 5px 0 40px;
+}
+.contact-form input,textarea,button {
+    margin: 7px 0;
+}
+
+/* Footer CSS */
+.footer {
+    padding: 30px 0;
+}
+.footer p {
+    font-size: 19px;
+}
+
+/* Credit CSS */
+.credit {
+    padding: 30px 0;
+}
+.creditcolor {
+    background: #f1c40f;
+}
+.credit p {
+    font-size: 19.5px;
+}
+.credit a {
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+}
